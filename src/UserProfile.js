@@ -71,6 +71,7 @@ const UserProfile = () => {
 
     const xhr = new XMLHttpRequest();
     xhr.open('POST', 'https://15.237.120.69:20101/api/v1/videoReview/submit', true);
+    xhr.withCredentials = true;
 
     xhr.upload.addEventListener('progress', (event) => {
       if (event.lengthComputable) {
