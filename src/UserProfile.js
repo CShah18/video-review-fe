@@ -70,7 +70,7 @@ const UserProfile = () => {
     formData.append("userName", formattedUsername);
 
     const xhr = new XMLHttpRequest();
-    xhr.open('POST', 'http://15.237.120.69:20101/api/v1/videoReview/submit', true);
+    xhr.open('POST', 'https://15.237.120.69:20101/api/v1/videoReview/submit', true);
 
     xhr.upload.addEventListener('progress', (event) => {
       if (event.lengthComputable) {
