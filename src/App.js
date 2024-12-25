@@ -5,7 +5,7 @@ import UserProfile from './UserProfile';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/get-review">
       <Routes>
         <Route path="/:username" element={<UserProfile />} />
       </Routes>

@@ -127,7 +127,7 @@ const UserProfile = () => {
           <div className="container">
             <div className="header-main section">
               <div className="logo">
-                <img src="/images/header-logo.svg" alt="logo" />
+                <img src={`${process.env.PUBLIC_URL}/images/header-logo.svg`} alt="logo" />
               </div>
             </div>
           </div>
@@ -167,7 +167,7 @@ const UserProfile = () => {
                     <li>
                       <div className="img-wrap">
                       <a href="#/" style={{cursor: 'default', pointerEvents: 'none'}}>
-                        <img src="/images/videos-recordeing-img1.png" alt="Video Recording Tip 1" />
+                        <img src={`${process.env.PUBLIC_URL}/images/videos-recordeing-img1.png`} alt="Video Recording Tip 1" />
                         </a>
                       </div>
                       <div className="content-wrap">
@@ -177,7 +177,7 @@ const UserProfile = () => {
                     <li>
                       <div className="img-wrap">
                       <a href="#/" style={{cursor: 'default', pointerEvents: 'none'}}>
-                        <img src="/images/videos-recordeing-img2.png" alt="Video Recording Tip 2" />
+                        <img src={`${process.env.PUBLIC_URL}/images/videos-recordeing-img2.png`} alt="Video Recording Tip 2" />
                         </a>
                       </div>
                       <div className="content-wrap">
@@ -187,7 +187,7 @@ const UserProfile = () => {
                     <li>
                       <div className="img-wrap">
                       <a href="#/" style={{cursor: 'default', pointerEvents: 'none'}}>
-                        <img src="/images/videos-recordeing-img3.png" alt="Video Recording Tip 3" />
+                        <img src={`${process.env.PUBLIC_URL}/images/videos-recordeing-img3.png`} alt="Video Recording Tip 3" />
                         </a>
                       </div>
                       <div className="content-wrap">
