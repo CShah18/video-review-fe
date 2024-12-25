@@ -59,6 +59,8 @@ const UserProfile = () => {
     
     if (!file || !isFileValid) return;
 
+    document.getElementById('submit-button').className = 'submit disabled';
+
     setIsSubmitting(true);
     setIsUploading(true);
     setProgress(0);
