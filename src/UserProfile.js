@@ -122,7 +122,7 @@ const UserProfile = () => {
     formData.append("userName", formattedUsername);
 
     const xhr = new XMLHttpRequest();
-    xhr.open('POST', 'https://15.237.120.69:20101/api/v1/videoReview/submit', true);
+    xhr.open('POST', 'https://apis.sacglobal.co/video/submit', true);
     xhr.withCredentials = true;
 
     xhr.upload.addEventListener('progress', (event) => {
