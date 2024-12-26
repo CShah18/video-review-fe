@@ -84,7 +84,7 @@ const UserProfile = () => {
         return;
       }
 
-      if (!allowedExtensions.includes(fileExtension) || !allowedMimeTypes.includes(fileMimeType)) {
+      if (!allowedExtensions.includes(fileExtension)) {
         setFileInfo("Invalid file type. Only MP4, MOV, WMV, AVI, MKV, or WebM files are allowed.");
         setIsFileValid(false);
         return;
