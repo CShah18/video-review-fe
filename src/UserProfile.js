@@ -18,7 +18,57 @@ const UserProfile = () => {
     "video/mp4", "video/quicktime", "video/x-ms-wmv", "video/avi", "video/x-matroska", "video/webm"
   ];
 
+  let scriptIdea = ``;
+
   const formattedUsername = username.charAt(0).toUpperCase() + username.slice(1);
+
+  switch (formattedUsername) {
+    case 'Carlo':
+      scriptIdea = `
+        I started working with Jignesh, Chintan, and Webforest over five years ago on a simple website. Their design concepts amazed me from day one! <br /><br />
+        Since then, they’ve been more than an agency—they’re my go-to partners. Every time I have an idea, they bring it to life with research, creativity, and cutting-edge technology. Chintan especially inspires me, making every idea feel like it’s already real. <br /><br />
+        From design to development, their top-notch team handles everything. After years of working together, visiting them personally was an unforgettable experience. Webforest isn’t just an agency—they’re my partners in turning dreams into reality.
+      `;
+      break;
+
+    case 'Bk':
+      scriptIdea = `
+        "Wow! Oh my God—Jignesh, Chintan, and the Webforest team! <br /><br />
+        It’s been such a long journey with them. I still remember when we started working with Webforest—they hadn’t even finalized their business name back then! We began with a small design task, and now, over five years later, they handle all our projects. <br /><br />
+        Chintan and Jignesh have built a team that never disappoints. Priya, especially, has been a game-changer. Since she joined, communication has become so smooth—she’s always responsive and knows exactly how to handle things. <br /><br />
+        What makes Webforest special is how well they understand our clients’ needs and expectations. They’ve helped us grow, and they’ve grown too, delivering the best services every step of the way.
+        Cheers to Webforest and our amazing partnership!"
+
+      `;
+      break;
+
+    case 'Cody':
+      scriptIdea = `
+        As a marketing agency, we work with many clients on SEO, and having CRO-friendly website designs is crucial for us. <br /><br />
+        Webforest has been an amazing partner in this journey. They don’t just create designs—they focus on best practices for CRO, ensuring the websites are perfectly aligned with our SEO and marketing goals. <br /><br />
+        Our partnership with Webforest goes way back to the early days of Searchbloom, and they’ve been instrumental in supporting our growth. They truly feel like an extension of our team. <br /><br />
+        They are miles away, but their team is incredibly responsive. Tasks and updates are always quick, and they make collaboration seamless. <br /><br />
+        Wishing Webforest the very best and congratulations on completing 10 years!
+      `;
+      break;
+
+    case 'Diego':
+      scriptIdea = `
+        When we decided to hire a dedicated resource, we were a bit unsure—how would they fit into our team? Would they understand our needs? But working with WebForest has completely exceeded our expectations! <br /><br />
+        The onboarding process was seamless. Within days, our dedicated resource became an integral part of our operations, managing tasks with efficiency and precision
+      `;
+      break;
+  
+    default:
+      scriptIdea = `
+        I’ve worked this team for several years now and they are the best I know. All of them
+        are truly professional. They have the patience of a surgeon when it comes to
+        modification and changes. You know when you have some expectations about the result and
+        you are just blown away because what you receive is way far above what you expected?
+        this is what I got.
+      `;
+      break;
+  }
 
   const handleFileChange = (e) => {
     const selectedFile = e.target.files[0];
@@ -140,23 +190,16 @@ const UserProfile = () => {
             <div className="container">
               <div className="name-wrap">
                 <h3>Hello, <span>{formattedUsername}!</span></h3>
-                <p>Thanks so much for agreeing to record a video testimonial! We really appreciate it.</p>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                  tincidunt ut laoreet dolore aliquam erat volutpat. Ut wisi enim ad minim.</p>
+                <p>Thank you so much for agreeing to record a video testimonial! We truly appreciate your time and support.</p>
               </div>
             </div>
           </div>
           <div className="script-ideas-section">
             <div className="container">
               <div className="script-ideas-wrap">
-                <h4>We are exactly your words around this script ideas:</h4>
+                <h4>We’ve got the script below for you, if you’re feeling a little lazy and don’t want to hunt for your own words 😊 :</h4>
                 <div className="script-wrap">
-                  <p> I’ve worked this team for several years now and they are the best I know. All of them
-                    are truly professional. They have the patience of a surgeon when it comes to
-                    modification and changes. You know when you have some expectations about the result and
-                    you are just blown away because what you receive is way far above what you expected?
-                    this is what I got.
-                  </p>
+                  <p dangerouslySetInnerHTML={{ __html: scriptIdea }} />
                 </div>
               </div>
             </div>
