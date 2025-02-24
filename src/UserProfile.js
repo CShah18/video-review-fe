@@ -58,6 +58,22 @@ const UserProfile = () => {
         The onboarding process was seamless. Within days, our dedicated resource became an integral part of our operations, managing tasks with efficiency and precision
       `;
       break;
+
+    case 'Connection':
+      scriptIdea = `
+        As a marketing agency, we work with many clients on SEO, and having CRO-friendly website designs is crucial for us. <br /><br />
+        Webforest has been an amazing partner in this journey. They don’t just create designs—they focus on best practices for CRO, ensuring the websites are perfectly aligned with our SEO and marketing goals. <br /><br />
+        Our partnership with Webforest goes way back to the early days of  connection marketing, and they’ve been instrumental in supporting our growth. They truly feel like an extension of our team. <br /><br />
+        They are miles away, but their team is incredibly responsive. Tasks and updates are always quick, and they make collaboration seamless. <br /><br />
+        Wishing Webforest the very best and congratulations on completing 10 years!
+      `;
+      break;
+
+    case 'Philina':
+      scriptIdea = `
+        Webforest is our trusted design and development partner, understanding exactly what we need. Their approach to handling projects is always smooth and efficient, ensuring top-quality results. We truly enjoy working with them and appreciate their professionalism. If you're looking for a reliable digital partner, I highly recommend Webforest!
+      `;
+      break;
   
     default:
       scriptIdea = `
